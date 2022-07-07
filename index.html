@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS HW 31</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+    <form>
+        <label>
+            Name:
+            <span class="spanInvalid">This name is currently used or contains numbers</span>
+        </label>
+        <input id="colorName" type="text" required placeholder="Enter custom name">
+        <label>Type:
+        </label>
+        <select required id="colorType">
+            <option id="optionRGB" value="RGB">RGB</option>
+            <option id="optionRGBA" value="RGBA">RGBA</option>
+            <option id="optionHEX" value="HEX">HEX</option>
+        </select>
+        <label>
+            Code:
+            <span class="spanInvalid">Invalid value</span>
+        </label>
+        <input id="colorCode" type="text" required placeholder="0-255, 0-255, 0-255">
+        <button type="button" id="saveBtn">Save</button>
+    </form>
+    <h2>All colors</h2>
+    <div class="color-blocks">
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
